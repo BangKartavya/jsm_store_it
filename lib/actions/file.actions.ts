@@ -26,8 +26,6 @@ const createQueries = (currentUser: Models.Document, types: string[], searchText
 
     if (sort) {
         const [sortBy, orderBy] = sort.split('-');
-        console.log(sortBy);
-        console.log(orderBy);
         queries.push(orderBy === 'asc' ? Query.orderAsc(sortBy) : Query.orderDesc(sortBy));
     }
 

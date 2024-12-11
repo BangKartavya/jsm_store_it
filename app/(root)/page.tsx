@@ -25,7 +25,6 @@ const Dashboard = async () => {
       <section>
         <Chart used={totalSpace.used} />
 
-        {/* Uploaded file type summaries */}
         <ul className="dashboard-summary-list">
           {usageSummary.map((summary) => (
             <Link
