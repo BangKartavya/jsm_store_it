@@ -16,7 +16,10 @@ const Header = ({ userId, accountId }: { userId: string, accountId: string }) =>
                 <form action={async () => {
                     'use server';
                     await signOutUser();
-                }}>
+                    return "signout";
+                }
+                }
+                >
                     <Button type="submit" className="sign-out-button">
                         <Image
                             src="/assets/icons/logout.svg"
