@@ -44,7 +44,6 @@ const AuthForm = ({ type }: { type: FormType }) => {
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
-        console.log(values);
 
         setIsLoading(true);
         setErrorMessage('');
@@ -135,4 +134,4 @@ const AuthForm = ({ type }: { type: FormType }) => {
     )
 }
 
-export default AuthForm
+export default AuthForm;

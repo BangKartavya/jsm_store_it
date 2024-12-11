@@ -23,4 +23,4 @@ const Thumbnail = ({ type, extension, url, imageClassName, className }: Props) =
     </figure>
 }
 
-export default Thumbnail
+export default Thumbnail;
