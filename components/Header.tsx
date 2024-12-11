@@ -16,7 +16,6 @@ const Header = ({ userId, accountId }: { userId: string, accountId: string }) =>
                 <form action={async () => {
                     'use server';
                     await signOutUser();
-                    return "signout";
                 }
                 }
                 >
